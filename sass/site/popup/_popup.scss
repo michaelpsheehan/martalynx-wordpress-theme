@@ -1,0 +1,109 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+
+    &__content {
+        @include absoluteCenter;
+        width: 90%;
+        height: 70%;
+        background-color: $color__white;
+        box-shadow: 0 2rm 4rem rgba(0, 0, 0, 0.2);
+        border-radius: 3px;
+        text-align: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url('images/erotic-belly.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 0.2em 2em;
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0.25);
+        transition: all 0.5s 0.2s;
+
+        p {
+            font-size: 80%;
+            padding-top: 0.5em;
+        }
+
+        .email-box {
+            position: absolute;
+            left: 50%;
+            bottom: 2%;
+            transform: translateX(-50%);
+            font-size: 80%;
+
+            .btn {
+                margin-top: 1em;
+            }
+        }
+
+        #popup-email-input {
+            background-color: rgba(0, 0, 0, 0.65);
+            max-width: 70%;
+        }
+
+
+        #btn-popup {
+            text-transform: uppercase;
+            border: none;
+            font-size: 150%;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            bottom: 4%;
+        }
+
+
+        @media screen and(min-width: $query__small) {
+            width: 65%;
+            height: 75%;
+
+            .email-box {
+                bottom: 8%;
+                font-size: 70%;
+            }
+
+            p {
+                margin-top: 2em;
+                font-size: 75%;
+            }
+        }
+
+        @media screen and(min-width: $query__medium) {
+            width: 725px;
+            height: 485px;
+        }
+    } // open states of the popup
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &:target &__content {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    &__close {
+        &:link,
+        &:visited {
+            position: absolute;
+            top: 0.1em;
+            right: 0.2em;
+            display: inline-block;
+            transition: all .1s;
+            font-size: 200%;
+            line-height: 1;
+            color: $color__white;
+        }
+        &:hover {
+            color: $color__main;
+        }
+    }
+}

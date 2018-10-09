@@ -1,0 +1,66 @@
+/*-----BUTTONS-------*/
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    color: $color__white;
+    background-color: $color__main;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid $color__main;
+     color: $color__main;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: $color__button-hover;
+    
+}
+
+
+.btn-full:link,
+.btn-full:visited {
+    
+    border: 1px solid $color__main;
+    background-color: $color__main;
+    color: $color__white;
+    
+     line-height: 1;
+	padding: .6em 1em .6em 1em;
+    
+}
+
+.btn-full:hover,
+.btn-full:active {
+    
+    border: 1px solid $color__button-hover;
+    background-color: $color__button-hover;
+    color: $color__white;
+   
+    
+}
+
+
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid $color__main;
+    color: $color__white;
+}
+
+
+
+
+

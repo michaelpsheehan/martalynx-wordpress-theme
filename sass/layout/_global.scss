@@ -1,0 +1,67 @@
+.is-home-page .site-content {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.site-content {
+
+    max-width: $size__max-width;
+    padding: 1em;
+    margin: 0 auto;
+
+    @media screen and (min-width: $query__small) {
+        padding: 2em;
+        margin: 0 auto;
+    }
+
+
+}
+
+
+@media screen and (min-width: $query__medium) {
+    .single {
+        &.has-sidebar {
+
+            .hentry {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+
+                .entry-header {
+                    width: 100%;
+                    flex: 1 0 100%;
+                }
+
+
+                .post-content {
+                    width: $size__ratio-large;
+                }
+
+                .widget-area {
+                    width: $size__ratio-small;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media screen and (min-width: $query__medium) {
+    .single {
+        &.no-sidebar {
+
+            .post-content__wrap {
+                display: flex;
+                justify-content: space-around;
+
+                .post-content__body {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

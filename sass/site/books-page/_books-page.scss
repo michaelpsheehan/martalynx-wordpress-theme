@@ -1,0 +1,169 @@
+//  test to use inc template functions file to add a class when the page is the books page
+
+
+.book-page-width .site-content {
+    max-width: $size__max-width-book-page;
+}
+
+
+.archive-book-page .site-content {
+    max-width: $size__max-width-book-page;
+}
+
+
+
+
+
+
+.title--books-page {
+    color: $color__main;
+    font-size: 1.5em;
+}
+
+.books--description {
+    color: $color__main;
+    margin-bottom: 0;
+    font-family: $font__main;
+}
+
+.books-wrapper--text {
+    font-family: $font__serif;
+}
+
+
+.books-wrapper{
+
+ .btn--book {
+        
+        position: absolute;
+        display: inline-block;
+        font-size: 90%;
+        margin: 1em auto 3em auto;
+        right: 50%;
+        transform: translateX(50%);
+        font-family: $font__main;
+     text-transform: uppercase;
+       
+        
+    }
+
+
+}
+
+
+
+.books-wrapper {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+    
+    .entry-content {
+        margin: unset;
+    }
+    
+    @media screen and (max-width: $query__medium) {
+    
+    img {
+
+        position: relative;
+        width: 300px;
+        height: auto;
+        margin: 2em auto;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+        
+    }
+        
+        
+    
+    @media screen and (max-width: $query__medium) {
+   
+       
+    }
+}
+
+
+@media screen and (min-width: $query__medium) {
+    
+    .books-wrapper { 
+        img{
+            max-width: inherit;
+            margin: 1.5em 1em;
+            align-self: center;
+            }
+        
+        .btn {
+        display: inline-block;
+     position: absolute;
+        right: 7.2em;
+        bottom: .2em;
+        margin: 1em; 
+      
+    }
+    
+        
+    }
+    
+
+    .books-wrapper-flexbox {
+        display: flex;
+        
+        justify-content: space-between;
+        align-items: flex-start;       
+    }
+    
+    .books-flex-item {
+        
+    }
+
+.books-wrapper--text {
+   
+    margin: 0 1em;
+    
+    
+}
+    
+    .book-excerpt-text {
+        font-size: 18px;
+    } 
+    
+    
+}
+
+
+
+
+
+//  single book page --------------------
+
+
+.single-book-page {
+ .title--books-page {
+    color: $color__main;
+    font-size: 1.5em;
+        text-align: center;
+        
+}
+    
+}
+
+
+
+.book-cover-img-single {
+    display: block;
+    text-align: center;  
+}
+
+
+// coming soon h1 books page archive
+
+.heading-coming-soon {
+    text-align: center;
+    font-size: 2em;
+    color: $color__off-black;
+}
+
+

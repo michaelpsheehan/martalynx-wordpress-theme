@@ -1,0 +1,195 @@
+.home-page-body h2 {
+    margin-top: 0;
+    padding-top: 0.5em;
+}
+
+/* ---------------------------------------------------*/
+
+/* Download Book */
+
+/* --------------------------------------------------*/
+
+.section-black-orchid {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('images/dancer-delete-test.jpg');
+    /*url(img/beach-girl.jpg)*/
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 1080px;
+    min-height: 600px;
+    position: relative;
+    z-index: 0;
+    margin: 0;
+
+    .section-black-orchid h2 {
+        color: $color__white;
+        font-size: 180%;
+    }
+
+    .black-orchid-box {
+        display: block;
+        background-color: rgba(68, 70, 72, 0.12);
+        height: 75vh;
+        width: 92%;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        bottom: 2px;
+        left: 2px;
+
+        @media screen and (min-width: $query__small) {
+            width: 67%;
+        }
+
+        @media screen and (min-width: $query__medium) {
+            width: 50%;
+        }
+
+    }
+
+    .black-orchid-btn {
+        display: inline-block;
+        position: relative;
+        margin: 5% auto auto 10%;
+        bottom: 0;
+        left: auto;
+        right: auto;
+        top: auto;
+        width: auto;
+    }
+
+    .black-orchid-box p {
+        color: #e0d9d9;
+        font-size: 105%;
+        padding: 5%;
+        background-color: rgba(18, 20, 21, 0.59);
+        margin: 5% 5% auto 5%;
+    }
+
+    .book-wrapper img {
+        height: 200px;
+        width: auto;
+        display: inline-block;
+        float: left;
+        position: relative;
+        margin: 10px;
+    }
+}
+
+
+/* ---------------------------------------------------*/
+
+/* email-signup */
+
+/* --------------------------------------------------*/
+
+.section-email-signup {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/erotic-belly.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    max-height: 1080px;
+    min-height: 600px;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.section-email-signup-box {
+    display: inline-block;
+    background-color: rgba(68, 70, 72, 0.32);
+    width: 80%;
+    height: 50%;
+    max-height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#email-input-homepage {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #c7c8c9;
+    border-radius: 33px;
+    border: 1px solid rgba(255, 255, 255, 0.0);
+}
+
+.section-email-signup .btn {
+    margin: 10px auto;
+    text-transform: uppercase;
+    display: block;
+}
+
+.section-email-signup-box h3 {
+    position: relative;
+    font-size: 190%;
+    padding: 10px auto 10px auto;
+    color: white;
+    text-transform: none;
+
+}
+
+@media screen and (min-width: $query__small) {
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-email-signup .btn {
+        display: unset;
+    }
+}
+
+@media screen and (min-width: $query__medium) {
+    .section-email-signup-box {
+        height: 250px;
+        width: 700px;
+    }
+}
+
+/* ---------------------------------------------------*/
+
+/* FOLLOW ME */
+
+/* --------------------------------------------------*/
+
+.section-follow-me {
+    background-color: #fff;
+    text-align: center;
+    height: 250px;
+    font-size: 80%;
+    width: 100%;
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .icon {
+            height: 3.5em;
+            width: 3.5em;
+            justify-content: center;
+            margin: 0 2em;
+        }
+    }
+
+    .icon-facebook {
+        &:hover {
+            fill: $color__facebook;
+        }
+    }
+
+    .icon-twitter {
+        &:hover {
+            fill: $color__twitter;
+        }
+    }
+
+    .icon-instagram {
+        &:hover {
+            fill: $color__instagram;
+        }
+    }
+}
