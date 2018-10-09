@@ -1,17 +1,8 @@
-//(function ($) {
-//    $('img.aligncenter').wrap('<figure class="centered-image" />');
-// })(jQuery);
-//
 
-
-(function($){
-	$('figure.wp-caption.aligncenter').removeAttr('style');
-	$('img.aligncenter').wrap('<figure class="centered-image" />');
-	
-	/*
-	 * Test if inline SVGs are supported.
-	 * @link https://github.com/Modernizr/Modernizr/
-	 */
+/*
+// 	 * Test if inline SVGs are supported.
+// 	 * @link https://github.com/Modernizr/Modernizr/
+// 	 */
 	function supportsInlineSVG() {
 		var div = document.createElement( 'div' );
 		div.innerHTML = '<svg/>';
@@ -21,5 +12,3 @@
 	if ( true === supportsInlineSVG() ) {
 		document.documentElement.className = document.documentElement.className.replace( /(\s*)no-svg(\s*)/, '$1svg$2' );
 	}
-})(jQuery);
-

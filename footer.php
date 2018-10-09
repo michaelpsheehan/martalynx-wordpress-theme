@@ -130,10 +130,15 @@ $instagram_link = get_field('instagram_link', 7);
 
     <?php wp_footer(); ?>
     
+    
+    
+    <?php  if(!is_front_page()) { ?>
+    
     <!------------- site wrapper for flexbox and stiky footer end -------------->
     </div>
     <!------------- site wrapper -------------->
-
+    
+    <?php } ?>
 
     </body>
 

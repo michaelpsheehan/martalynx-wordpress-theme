@@ -803,7 +803,6 @@ a:hover, a:active {
 ## Global Layouts
 --------------------------------------------------------------*/
 .site-wrapper {
-	border: 2px solid blue;
 	min-height: 100vh;
 	display: -ms-grid;
 	display: grid;

@@ -60,10 +60,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="page" class="site">
     <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'martalynx' ); ?></a>
     
+
+
+ <?php  if(!is_front_page()) { ?>
+    
+    
+    
+    
+    
     <!------------ wrapper for Flexbox  and sticky footer----------- -->
     <div class="site-wrapper">
-    <!------------ wrapper for Flexbox  and sticky footer----------- -->
-
+        <!------------ wrapper for Flexbox  and sticky footer----------- -->
+        
+        <?php } ?>
 
 
 <div id="header-main"  

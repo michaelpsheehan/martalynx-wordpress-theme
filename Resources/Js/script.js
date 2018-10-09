@@ -1,30 +1,36 @@
 
 
 
-  
-jQuery(document).ready(function($) {
-
-
-    
-
-// new mobile nav way
-    
- $('.js--nav-icon').click(function(){
-     
-		$(this).toggleClass('open');
-     
-       var nav = $('.main-navigation');
-     
-     if(nav.hasClass('open-nav')) {
-        nav.removeClass('open-nav');
-        nav.addClass('close-nav');
-        } else {
-            nav.removeClass('close-nav');
-            nav.addClass('open-nav');
-        };
-   
-     });  
-    
-});
-
+// //  -------------------------------------------  Get elements from the dom -------------------------------------------
       
+const navBurger = document.querySelector('.burger.js--nav-icon');
+
+function navBurgerToggle(e) {
+    
+
+    // toggles nav burger icon open and closed
+    this.classList.toggle('open');
+
+    const nav = document.querySelector('.main-navigation');
+
+// drops down the main navigation menu links on click
+if(nav.classList.contains('open-nav')) {
+    
+        nav.classList.remove('open-nav')
+        nav.classList.add('close-nav')
+
+
+    } else {
+    
+        nav.classList.remove('close-nav');
+        nav.classList.add('open-nav');
+    }
+
+    
+}
+
+navBurger.addEventListener('click', navBurgerToggle);
+
+
+
+    

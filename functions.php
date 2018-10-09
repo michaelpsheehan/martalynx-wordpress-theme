@@ -224,8 +224,7 @@ function martalynx_scripts() {
     
     wp_enqueue_style('marta-lynx-fonts', 'https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Libre+Baskerville' );
       
-//    wp_enqueue_style('marta-lynx-fonts', 'https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|Nosifer' );
-    
+
     // function for header paralax
     
     
@@ -239,10 +238,17 @@ function martalynx_scripts() {
     
         
 
-wp_enqueue_script('martalynx-jquery-scripts', get_template_directory_uri() . '/Resources/Js/script.js', array('jquery'), '20172910', true);
-   
-wp_enqueue_script('martalynx-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), '20182310', true);
+// 	wp_enqueue_script('martalynx-jquery-scripts', get_template_directory_uri() . '/Resources/Js/script.js', array('jquery'), '20172910', true);
+	
+// wp_enqueue_script('martalynx-functions', get_template_directory_uri() . '/js/functions.js', array('jquery'), '20182310', true);
     
+
+
+
+
+wp_enqueue_script('martalynx-javascript-scripts', get_template_directory_uri() . '/Resources/Js/script.js', array(), '20180910', true);
+   
+wp_enqueue_script('martalynx-functions', get_template_directory_uri() . '/js/functions.js', array(), '20180910', true);
     
     
     
