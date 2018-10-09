@@ -34,8 +34,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-MZCPVCB');</script>
 <!-- End Google Tag Manager -->
-	
-	
+    
+
 	
 <!-- google tag manager end -->
 	
@@ -52,11 +52,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 	
-	
-	
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'martalynx' ); ?></a>
+    
 
+
+
+
+<div id="page" class="site">
+    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'martalynx' ); ?></a>
+    
+    <!------------ wrapper for Flexbox  and sticky footer----------- -->
+    <div class="site-wrapper">
+    <!------------ wrapper for Flexbox  and sticky footer----------- -->
 
 
 
@@ -182,8 +188,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           
 		
 		
-	</header><!-- #masthead -->
+    </header><!-- #masthead -->
+    
 
+    <!-- ending header main -->
+                </div>
+<!-- ending header main  -->
 	<div id="content" class="site-content  <?php if(is_front_page() ){ echo 'home-page';} 
            
            ?>">

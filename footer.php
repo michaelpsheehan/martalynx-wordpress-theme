@@ -109,11 +109,30 @@ $instagram_link = get_field('instagram_link', 7);
 
     </footer>
     <!-- #colophon -->
-    </div>
+    
+
+<!-- causing error header main was ending here -->
+<!-- </div> -->
+<!-- causing error header main was ending here -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <!-- #page -->
+    
+
 
     <?php wp_footer(); ?>
-
+    
+    <!------------- site wrapper for flexbox and stiky footer end -------------->
+    </div>
+    <!------------- site wrapper -------------->
 
 
     </body>

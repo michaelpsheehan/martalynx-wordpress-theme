@@ -188,3 +188,55 @@
     margin-top: -5px;
     margin-left: -5px;
 }
+
+.share-buttons-title {
+    text-align: center;
+    margin: 2em auto 1em auto;
+}
+
+.share-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto 4em auto;
+
+
+    .icon {
+        height: 1.7em;
+        width: 1.7em;
+        margin: 0 .5em;
+        fill: #202121;
+    }
+
+}
+
+.icon-facebook:hover {
+    fill: #3b5998;
+}
+
+.icon-twitter:hover {
+    fill: #00aced;
+}
+
+.icon-instagram:hover {
+    fill: #D63172;
+}
+
+.icon-tumblr:hover {
+    fill: #34526f;
+}
+
+.icon-google-plus:hover {
+    fill: #dd4b39;
+}
+
+.icon-whatsapp:hover {
+    fill: #128C7E;
+}
+
+.icon-mail4:hover {
+    fill: #245a88;
+}
