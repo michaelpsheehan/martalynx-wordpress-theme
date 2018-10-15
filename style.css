@@ -1404,6 +1404,12 @@ a:hover, a:active {
 	margin: 0;
 }
 
+@media screen and (min-width: 1921px) {
+	.header-image-container {
+		max-height: 2160px;
+	}
+}
+
 #header-top {
 	z-index: 997;
 	background-color: #241f1f;
@@ -1607,6 +1613,17 @@ a:hover, a:active {
 	}
 }
 
+@media screen and (min-width: 1921px) {
+	.hero-text-box {
+		width: 600px;
+		bottom: 373px;
+		right: 712px;
+	}
+	.hero-text-box h1 {
+		font-size: 450%;
+	}
+}
+
 /*
 Header Menu
 */
@@ -1619,6 +1636,12 @@ Header Menu
 	background-color: #241f1f;
 	left: 0;
 	z-index: 2;
+}
+
+@media screen and (min-width: 1921px) {
+	.main-navigation {
+		font-size: 140%;
+	}
 }
 
 .main-navigation ul {
@@ -1981,6 +2004,12 @@ li.focus > ul {
 	}
 }
 
+@media screen and (min-width: 1921px) {
+	.section-black-orchid {
+		max-height: 2160px;
+	}
+}
+
 .section-black-orchid .black-orchid-btn {
 	display: inline-block;
 	position: relative;
@@ -2022,6 +2051,12 @@ li.focus > ul {
 	min-height: 600px;
 	background-attachment: fixed;
 	position: relative;
+}
+
+@media screen and (min-width: 1921px) {
+	.section-email-signup {
+		max-height: 2160px;
+	}
 }
 
 .section-email-signup-box {
@@ -2442,11 +2477,11 @@ li.focus > ul {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.92);
 	z-index: 999;
 	opacity: 0;
 	visibility: hidden;
-	transition: all 0.3s;
+	transition: all 0.125s;
 }
 
 .popup__content {
@@ -2466,9 +2501,9 @@ li.focus > ul {
 	background-position: center;
 	padding: 0.2em 2em;
 	opacity: 0;
-	-webkit-transform: translate(-50%, -50%) scale(0.25);
-	        transform: translate(-50%, -50%) scale(0.25);
-	transition: all 0.5s 0.2s;
+	-webkit-transform: translate(-50%, -50%) scale(0.6);
+	        transform: translate(-50%, -50%) scale(0.6);
+	transition: all 0.125s 0.125s;
 }
 
 .popup__content p {

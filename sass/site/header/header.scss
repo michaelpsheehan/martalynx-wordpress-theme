@@ -15,6 +15,10 @@
     background-attachment: fixed;
     position: relative;
     margin: 0;
+
+    @media screen and (min-width: $query__hd) {
+        max-height: 2160px;
+    }
 }
 
 #header-top {
@@ -151,6 +155,8 @@
     }
 
 
+
+
     h1 {
         color: #fff;
         margin: 0 0 20px 0;
@@ -190,6 +196,7 @@
     #header-top {
         display: none;
     }
+
     .site-header {
 
         display: flex;
@@ -250,15 +257,36 @@
             letter-spacing: 2px;
             font-weight: 300;
         }
-
-
     }
+}
+
+// hi res up to 1080p
+// @media screen and (min-width: $query__large) {
+
+//     .hero-text-box {
+//         width: 384px;
+//         height: auto;
+//         right: 676px;
+//         padding: 21px; // 
+//         background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+
+//     }
+// }
+
+//  hd and above screens 4k
+@media screen and (min-width: $query__hd) {
+
+    .hero-text-box {
+        width: 600px;
+        bottom: 373px;
+        right: 712px;
 
 
 
-
-
-
+        h1 {
+            font-size: 450%;
+        }
+    }
 }
 
 /*

@@ -4,11 +4,11 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.92);
     z-index: 999;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s;
+    transition: all 0.125s;
 
     &__content {
         @include absoluteCenter;
@@ -23,8 +23,8 @@
         background-position: center;
         padding: 0.2em 2em;
         opacity: 0;
-        transform: translate(-50%, -50%) scale(0.25);
-        transition: all 0.5s 0.2s;
+        transform: translate(-50%, -50%) scale(0.6);
+        transition: all 0.125s 0.125s;
 
         p {
             font-size: 80%;
@@ -79,7 +79,9 @@
             width: 725px;
             height: 485px;
         }
-    } // open states of the popup
+    }
+
+    // open states of the popup
     &:target {
         opacity: 1;
         visibility: visible;
@@ -91,6 +93,7 @@
     }
 
     &__close {
+
         &:link,
         &:visited {
             position: absolute;
@@ -102,6 +105,7 @@
             line-height: 1;
             color: $color__white;
         }
+
         &:hover {
             color: $color__main;
         }

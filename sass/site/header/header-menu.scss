@@ -8,6 +8,10 @@
     left: 0;
     z-index: 2;
 
+    @media screen and (min-width: $query__hd) {
+        font-size: 140%;
+    }
+
     ul {
         display: block;
         list-style: none;

@@ -46,6 +46,12 @@
             width: 50%;
         }
 
+
+
+    }
+
+    @media screen and (min-width: $query__hd) {
+        max-height: 2160px;
     }
 
     .black-orchid-btn {
@@ -94,6 +100,10 @@
     min-height: 600px;
     background-attachment: fixed;
     position: relative;
+
+    @media screen and (min-width: $query__hd) {
+        max-height: 2160px;
+    }
 }
 
 .section-email-signup-box {
@@ -106,6 +116,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
 
 #email-input-homepage {
@@ -148,6 +159,7 @@
         width: 700px;
     }
 }
+
 
 /* ---------------------------------------------------*/
 
